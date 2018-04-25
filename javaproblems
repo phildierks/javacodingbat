@@ -1,0 +1,60 @@
+public class Runner {
+
+    //your main containing tests and output
+    public static void main(String[] args) {
+
+        System.out.println(helloName("Matt"));
+        System.out.println(helloName("Jim"));
+        System.out.println(helloName("Maria"));
+        System.out.println(helloName("Kate"));
+
+        System.out.println(nextMethod(true));
+    }
+
+    //your codingbat method here - must match
+    // the method name from codingbat
+    public static String helloName(String name) {
+        return "hi " + name;
+    }
+
+    public boolean sleepIn(boolean weekday, boolean vacation) {
+        if(!weekday || vacation){
+            return true;
+        }
+        return false;
+    }
+
+    public String theEnd(String str, boolean front) {
+
+    if(front){
+        return str.substring(0,1);
+    }else{
+        return str.substring(str.length()-1);
+    }
+    }
+
+    public boolean twoAsOne(int a, int b, int c) {
+    if(a + b == c){
+        return true;
+    }else if(c + a == b){
+        return true;
+    }else if(b + c == a){
+     return true;
+    }else{
+     return false;
+}
+    }
+
+    public int countHi(String str) {
+     int count = 0;
+        for(int i = 0; i < str.length(); i++){
+            if(str.substring(i, i+2).equals("hi")){
+                count++;
+            }
+            return count;
+        }
+    }
+
+}
+
+
